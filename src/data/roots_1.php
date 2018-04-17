@@ -1,0 +1,1 @@
+<?php $root_map = ['1-dodecanol' => '1-dodecanols','1-hitter' => '1-hitters','11-plus' => '11-pluss',];

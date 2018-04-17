@@ -1,0 +1,1 @@
+<?php $lemma_map = ['1-dodecanols' => '1-dodecanol','1-hitters' => '1-hitter','11-pluss' => '11-plus',];

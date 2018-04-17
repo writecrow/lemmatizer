@@ -1,0 +1,1 @@
+<?php $lemma_map = ['2-hitters' => '2-hitter',];

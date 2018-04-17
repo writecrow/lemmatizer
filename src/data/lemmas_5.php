@@ -1,0 +1,1 @@
+<?php $lemma_map = ['5-hitters' => '5-hitter','5-hydroxytryptamines' => '5-hydroxytryptamine',];

@@ -1,0 +1,1 @@
+<?php $lemma_map = ['8voes' => '8vo',];
