@@ -18,6 +18,7 @@ print Lemmatizer::getLemma('leaves');
 
 print Lemmatizer::getWordsFromLemma('leaf');
 // Will print 'leaves,leafing,leafed,leafs'
+```
 
 ## Testing
 Unit Tests can be run (after ```composer install```) by executing ```vendor/bin/phpunit```
