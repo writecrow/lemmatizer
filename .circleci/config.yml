@@ -2,14 +2,13 @@
 #
 # Check https://circleci.com/docs/2.0/language-php/ for more details
 #
-
 version: 2
 jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/php:7.1.5-browsers
-
+      - image: circleci/php:7.1-node-browsers
+      
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
       # documented at https://circleci.com/docs/2.0/circleci-images/
@@ -26,12 +25,6 @@ jobs:
           - v1-dependencies-{{ checksum "composer.json" }}
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
-      - run: php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-      - run: php -r "if (hash_file('SHA384', 'composer-setup.php') === '669656bab3166a7aff8a7506b8cb2d1c292f042046c5a994c43155c0be6190fa0355160742ab2e1c88d40d5be660b410') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
-      - run: php composer-setup.php
-      - run: php -r "unlink('composer-setup.php');"
-      - run: php composer.phar self-update
-      - run: sudo mv composer.phar /usr/local/bin/composer
 
       - run: composer install -n --prefer-dist
 
@@ -39,6 +32,6 @@ jobs:
           paths:
             - ./vendor
           key: v1-dependencies-{{ checksum "composer.json" }}
-
+        
       # run tests!
-      - run: vendor/bin/phpunit
+      - run: ./vendor/bin/phpunit
