@@ -26,6 +26,11 @@ echo '<!DOCTYPE html>
 
 echo '
 <div class="container">
+  <div class="row">
+  <div class="six twelve columns">
+    <span><h3>PHP Lemmatizer</h3>(Non part-of-speech)</span><span class="u-pull-right">Source code: <a  href="https://github.com/writecrow/lemmatizer">https://github.com/writecrow/lemmatizer</a></span><hr />
+  </div>
+  </div>
   <form action="//' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'] . '" method="POST">
     <div class="row">
       <div class="six columns">
@@ -41,7 +46,7 @@ echo '
       echo '</div>
 
       <div class="six columns">
-      <label for="lemma">Get words from Lemma</label>
+      <label for="lemma">Get words from lemma</label>
       <input name="lemma" value="' . $lemma . '">
       <input type="submit" value="Get words from Lemma" />';
 
