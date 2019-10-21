@@ -5,6 +5,9 @@
 A PHP library for getting a lemma from a given word, and getting a list of words
 that map to a lemma.
 
+## Source data
+This lemma dictionary is largely based on [WordNet](https://wordnet.princeton.edu/), a project maintained at Princeton University.
+
 ## Usage in an application
 The included `index.php` file contains a generation form demo.
 
