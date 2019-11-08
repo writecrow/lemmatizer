@@ -9,7 +9,7 @@ that map to a lemma.
 This lemma dictionary is largely based on [WordNet](https://wordnet.princeton.edu/), a project maintained at Princeton University.
 
 ## Usage in an application
-The included `index.php` file contains a generation form demo.
+The included `index.php` file contains an interactive demo.
 
 Make your code aware of the Lemmatizer class via your favorite method
 (e.g., `use writecrow\Lemmatizer\Lemmatizer;`)
